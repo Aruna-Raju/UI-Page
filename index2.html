@@ -18,9 +18,9 @@
   <body>
       <div class="container-fluid">
           <div class="row">
-              <div class="col-12 col-sm-3 text-center py-3 first_col" style="background: url('images/side-img1.svg'), linear-gradient(to bottom, #3F5AFA, #1A2ACD); background-size: contain; background-repeat: no-repeat;">
-                  <h3 class="text-white mt-5 mb-4">Cloud Connect</h3>
-                  <p class="text-white">Download RPC client from FSM and install on your system. The client will connect your printshop production data with the application</p>
+              <div class="col-12 col-sm-3 text-center py-3 first_col" style="background: url('images/side-img2.svg'), linear-gradient(to bottom, #3F5AFA, #1A2ACD); background-size: contain; background-repeat: no-repeat;">
+                  <h3 class="text-white mt-5 mb-4">Printshop Profile</h3>
+                  <p class="text-white">This will be used in customer quotes you gentrate</p>
               </div>
 
               <!-- Multiple Step Form -->
@@ -29,30 +29,42 @@
                 <form id="msform">
                   <!-- progressbar -->
                   <ul id="progressbar">
-                      <li class="active">Configure</li>
-                      <li>Print Shop Profile</li>
+                      <li>Configure</li>
+                      <li class="active">Print Shop Profile</li>
                       <li>Import Details</li>
                   </ul>
                   <!-- fieldsets -->
+                  
                   <fieldset>
-                    <div class="row justify-content-center mt-5 pt-5">
-                        <div class="text-center">
-                            <span><i class="fas fa-plug" style="font-size: 50px; color: #999999;"></i></span>
-                            <h4 class="mt-4">Click Configure</h4>
-                            <p style="color: #999999;">connected to your printshop production data with Order Management</p>
+                    <div class="row mt-4">
+                      <div class="col-6 text-left px-4">
+                        <div class="form-group mb-4">
+                          <label for="pshop_name"><b>Printshop Name</b></label>
+                          <input type="text" class="form-control" id="pshop_name" placeholder="Shop Name" name="pshop_name">
                         </div>
+                        <div class="form-group mb-4">
+                          <label for="email"><b>Email</b></label>
+                          <input type="email" class="form-control" id="email" placeholder="john.dollarmail.c" name="email">
+                        </div>
+                        <div class="form-group mb-4">
+                          <label for="address"><b>Address</b></label>
+                          <input type="text" class="form-control" id="address1" placeholder="Address Line 1" name="address1">
+                          <input type="text" class="form-control mt-2" id="address2" placeholder="Address Line 2" name="address2">
+                        </div>
+                      </div>
+                      <div class="col-6 text-left px-4">
+                        <div class="form-group mb-4">
+                          <label for="upload_logo"><b>Upload Logo</b></label>
+                          <input type="file" class="form-control" id="upload_logo" placeholder="" name="upload_logo">
+                        </div>
+                      </div>
+
+                      <button class="btn btn-success next action-button" name="next" style="border-radius: 20px; position: absolute; bottom: 50px; right: 10px;">Next &nbsp; &nbsp;<i class="fas fa-arrow-right fa-sm"></i></button>
                     </div>
-                    
-                    <button class="btn btn-success next action-button" name="next" style="border-radius: 20px; position: absolute; bottom: 50px; right: 10px;">Configure &nbsp; &nbsp;<i class="fas fa-arrow-right fa-sm"></i></button>
-                  </fieldset>
-                  <fieldset>
-                      <h2 class="fs-title">Social Profiles</h2>
-                      <h3 class="fs-subtitle">Your presence on the social network</h3>
-                      <input type="text" name="twitter" placeholder="Twitter"/>
-                      <input type="text" name="facebook" placeholder="Facebook"/>
-                      <input type="text" name="gplus" placeholder="Google Plus"/>
-                      <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
-                      <input type="button" name="next" class="next action-button" value="Next"/>
+                      
+
+
+                      
                   </fieldset>
                   <fieldset>
                       <h2 class="fs-title">Create your account</h2>
